@@ -1,0 +1,6 @@
+#ifndef HAL_BOOTLOADER_JUMP_JUMP_H
+#define HAL_BOOTLOADER_JUMP_JUMP_H
+
+void JumpToBootloader(void);
+
+#endif // HAL_BOOTLOADER_JUMP_JUMP_H
