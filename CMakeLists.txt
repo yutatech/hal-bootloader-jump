@@ -1,13 +1,12 @@
 cmake_minimum_required(VERSION 3.22)
 project(hal_bootloader_jump)
 
-add_library(hal_bootloader_jump INTERFACE)
+add_library(${PROJECT_NAME} INTERFACE)
 
-# ヘッダーファイルのインクルードパスを指定
-target_include_directories(hal_bootloader_jump INTERFACE
+target_include_directories(${PROJECT_NAME} INTERFACE
     include
 )
 
-target_sources(hal_bootloader_jump INTERFACE
+target_sources(${PROJECT_NAME} INTERFACE
     src/jump.c
 )
